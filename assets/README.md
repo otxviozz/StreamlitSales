@@ -1,0 +1,1 @@
+Armazena arquivos estáticos como imagens, ícones e logos utilizados na interface do app.

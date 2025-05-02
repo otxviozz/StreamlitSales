@@ -70,3 +70,19 @@ Tabelas básicas:
 clientes (id, nome)
 vendas (id, cliente_id, produto, valor, vendedor, data, produtopago)
 pagamentos (cliente_id, statustotal)
+
+- Estrutura do Projeto
+
+VendasStreamlit/
+├── src/
+│   ├── auth/              # Autenticação de usuários
+│   ├── pages/             # Telas da aplicação
+│   ├── database/          # Conexão e consultas MySQL
+│   ├── utils/             # Funções auxiliares
+│   └── validations/       # Regras de validação
+│
+├── assets/                # Imagens e ícones
+├── config/                # Configurações gerais
+├── requirements.txt       # Lista de dependências
+├── .env                   # Variáveis de ambiente (não subir para o GitHub)
+└── app.py                 # Arquivo principal da aplicação
