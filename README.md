@@ -1,43 +1,6 @@
 # VendasStreamlit
 Aplicativo simples utilizando MySql e Streamlit
 
-Esqueleto do Projeto
-A aplicação seguirá esta sequência:
-
-app.py
-
-Carrega Streamlit
-
-Gerencia o estado da sessão (usuário logado ou não)
-
-Direciona para a página correta (login, vendedor, gerência)
-
-auth/
-
-Função de verificação de login (usuário/senha simples ou em banco)
-
-Pode ter perfis diferenciados: "gerência" ou "vendedor"
-
-pages/
-
-login.py: Tela de login
-
-vendedor.py: Tela de registrar venda e excluir venda
-
-gerencia.py: Painel de supervisão com métricas e ações de baixa de pagamento
-
-database/
-
-Conexão com MySQL
-
-Funções para insert, select, delete, update nas tabelas necessárias
-
-validations/
-
-Checar campos obrigatórios
-
-Validar formatos de dados (ex: valor numérico, nome não vazio)
-
 Funcionalidades
 1. Login
 Formulário simples com escolha de perfil (vendedor/gerência)
@@ -86,3 +49,15 @@ VendasStreamlit/
 ├── requirements.txt       # Lista de dependências
 ├── .env                   # Variáveis de ambiente (não subir para o GitHub)
 └── app.py                 # Arquivo principal da aplicação
+
+
+Para alterações, criar Ambiente virtual com os seguintes comandos no terminal:
+
+cd C:\Users\Aluno\Desktop\VendasStreamlit
+python -m venv venv
+venv\Scripts\activate
+
+Criamos o ambiente e ativamos, agora vamos baixar as dependências e rodar
+
+pip install -r requirements.txt
+streamlit run app.py
